@@ -17,6 +17,7 @@ const BubblePage = () => {
     .catch(err => console.log('fetched colors error',err))
   },[])
 
+  console.log('Passed props for colors', colorList)
   return (
     <>
       <ColorList colors={colorList} updateColors={setColorList} />
